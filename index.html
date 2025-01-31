@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica DIW - 2AV</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" /> 
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row g-0">
+        <div class="col-2 bgizda p-0">
+        </div>
+        <div class="col-8 p-0">
+            <header class="consup w-100" role="banner">
+                <!-- Imágenes cabecera -->
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center mb-3 mb-md-0">
+                        <img src="./img/los-secretos.png" alt="Logo de Los Secretos" class="img-fluid" aria-label="Logo del grupo Los Secretos">
+                    </div>
+                    <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
+                        <img src="./img/en-este-mundo-raro.png" alt="Portada del álbum En este mundo raro" class="img-fluid" aria-label="Portada del álbum En este mundo raro">
+                    </div>                        
+                </div>
+
+                <!-- Menú Navegacion -->
+                <nav class="navbar navbar-expand-md" role="navigation" aria-label="Menú principal">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                                aria-controls="navbarNav" aria-expanded="false" aria-label="Mostrar/Ocultar menú de navegación">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav mx-auto row text-center w-100" role="menubar">
+                                <li class="nav-item col-12 col-md-12 col-lg-4" role="none">
+                                    <a class="nav-link px-4" href="./index.html" role="menuitem" aria-current="page">Album</a>
+                                </li>
+                                <li class="nav-item col-12 col-md-12 col-lg-4" role="none">
+                                    <a class="nav-link px-4" href="./discografia.html" role="menuitem">Discografia</a>
+                                </li>
+                                <li class="nav-item col-12 col-md-12 col-lg-4" role="none">
+                                    <a class="nav-link px-4" href="./multimedia.html" role="menuitem">Multimedia</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <hr>
+        <main class="concen" role="main">
+            <div class="row g-4">            
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!-- Accordion Canciones del Album--> 
+                    <div class="accordion mx-auto my-5" id="AcordeonCanciones" aria-label="Lista de canciones del álbum">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingCanciones">
+                                <button class="accordion-button" type="button" 
+                                        data-bs-toggle="collapse" 
+                                        data-bs-target="#collapseOneCanciones"
+                                        aria-expanded="true"
+                                        aria-controls="collapseOneCanciones"
+                                        aria-label="Ver lista de canciones">
+                                    Canciones del Album
+                                </button>
+                            </h2>
+                                <div id="collapseOneCanciones" class="accordion-collapse collapse show" data-bs-parent="#AcordeonCanciones">
+                                    <div class="accordion-body">
+                                        <table class="table table-hover">
+                                            <tbody>
+                                                <tr><td>1</td><td>En Este Mundo Raro</td><td>3:46</td></tr>
+                                                <tr><td>2</td><td>Solo Quiero Que Me Digas la Verdad</td><td>3:58</td></tr>
+                                                <tr><td>3</td><td>Enseñame a Dormir</td><td>4:19</td></tr>
+                                                <tr><td>4</td><td>Trenes Perdídos</td><td>3:49</td></tr>
+                                                <tr><td>5</td><td>Lágrimas Sin Nombre</td><td>4:01</td></tr>
+                                                <tr><td>6</td><td>Desapareces</td><td>4:57</td></tr>
+                                                <tr><td>7</td><td>Por Segunda Vez</td><td>4:19</td></tr>
+                                                <tr><td>8</td><td>Buena Vída, Mejor Víno</td><td>3:31</td></tr>
+                                                <tr><td>9</td><td>Has Llegado un Poco Tarde</td><td>3:52</td></tr>
+                                                <tr><td>10</td><td>Sin Aire</td><td>3:03</td></tr>
+                                                <tr><td>11</td><td>Quererte por Querer</td><td>4:01</td></tr>
+                                                <tr><td>12</td><td>Soñadores</td><td>4:01</td></tr>
+                                                <tr><td>13</td><td>Bailando Con la Luna</td><td>2:34</td></tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Accordion Reseña del Album --> 
+                        <div class="accordion mx-auto my-5" id="AcordeonResena" aria-label="Reseña del álbum En este mundo raro">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingResena">
+                                    <button class="accordion-button" type="button" 
+                                            data-bs-toggle="collapse" 
+                                            data-bs-target="#collapseOneResena"
+                                            aria-expanded="true"
+                                            aria-controls="collapseOneResena"
+                                            aria-label="Mostrar resumen de la reseña">
+                                        Reseña del Album
+                                    </button>
+                                </h2>
+                                <div id="collapseOneResena" 
+                                    class="accordion-collapse collapse show" 
+                                    aria-labelledby="headingResena"
+                                    role="region">
+                                    <div class="accordion-body">
+                                        En este mundo raro, un álbum sincero compuesto por 13 canciones en la mejor línea de Los Secretos, esa de pop de querencia acústica aderezada con pinceladas de country y arreglos de raíz americana.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Chorus -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingResenaCompleta">
+                                    <button class="accordion-button collapsed" type="button" 
+                                            data-bs-toggle="collapse" 
+                                            data-bs-target="#collapseTwoResena"
+                                            aria-expanded="false"
+                                            aria-controls="collapseTwoResena"
+                                            aria-label="Mostrar reseña completa del álbum">
+                                        Ver reseña completa
+                                    </button>
+                                </h2>
+                                <div id="collapseTwoResena" 
+                                    class="accordion-collapse collapse" 
+                                    aria-labelledby="headingResenaCompleta"
+                                    role="region">
+                                    <div class="accordion-body">
+                                        <p>En este mundo raro, un álbum sincero compuesto por 13 canciones en la mejor línea de Los Secretos, esa de pop de querencia acústica aderezada con pinceladas de country y arreglos de raíz americana.</p>
+                                        <p>La canción que da título al disco abre el minutaje con ese cierto aire country, el mismo que tiene Buena vida, mejor vino. Pero dominan el disco otros ambientes más poperos, como Sólo quiero que me digas la verdad y Enséñame a dormir. Si alguna vez has cantado un tema de Los Secretos, a lo mejor es pertinente que sumes estos dos medios tiempos a tu cancionero, ya sea en privado o en el espejo público. Trenes perdidos corta ligeramente el ritmo, pero es uno de esos momentos de frágil introspección en los que no es recomendable mirar por la ventana si al otro lado las parejas se besan y abrazan bajo la lluvia. En Desapareces y Por segunda vez la banda recupera el pulso más animado gracias a una sección rítmica que parece que no hace nada, pero lo hace todo. Como si no costara trabajo.</p>
+                                        <p>Como es habitual en todos los discos de estudio de Los Secretos, en esta ocasión también hay espacio para una versión. Se trata de Lágrimas sin nombre, de los casi desconocidos The Cages, que sólo llegaron a editar un álbum. En el tramo final hay al menos tres cortes que suenan a clásicos instantáneos de la banda: Has llegado un poco tarde, Quererte por querer y Soñadores, canciones animosas en lo musical que crecerán exponencialmente en directo y que asombrosamente dejan una sensación de esperanza, a pesar de unas letras que plantean más bien todo lo contrario. Sin aire es otro momento emotivo, pero no tanto como el corte 12+1 (el 13, vaya), Bailando con la luna, en el que un Álvaro más lírico que nunca se despide acompañado por un piano.“Subí deprisa como la espuma/ para acabar bailando con la luna/ un corazón bailando con la luna”, dice el tema.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+
+                    <div class="col-12 col-md-6 col-lg-4">                    
+                        <!-- Accordion Letra Cancion -->    
+                        <div class="accordion mx-auto my-5" id="AcordeonLetra" aria-label="Letra de la canción En este mundo raro">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingLetraEstribillo">
+                                    <button class="accordion-button" type="button" 
+                                            data-bs-toggle="collapse" 
+                                            data-bs-target="#collapseOneLetra"
+                                            aria-expanded="true"
+                                            aria-controls="collapseOneLetra"
+                                            aria-label="Mostrar estribillo de la canción">
+                                        Letra de la canción<br>Estribillo
+                                    </button>
+                                </h2>
+                                <div id="collapseOneLetra" 
+                                    class="accordion-collapse collapse show" 
+                                    aria-labelledby="headingLetraEstribillo"
+                                    role="region">
+                                    <div class="accordion-body">
+                                        <div role="text" aria-label="Estribillo">
+                                            <p>En este mundo raro<br>
+                                            Que a veces se complica<br>
+                                            Y no tengo claro<br>
+                                            Lo que significa</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Chorus -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingLetraCompleta">
+                                    <button class="accordion-button collapsed" type="button" 
+                                            data-bs-toggle="collapse" 
+                                            data-bs-target="#collapseTwoLetra"
+                                            aria-expanded="false"
+                                            aria-controls="collapseTwoLetra"
+                                            aria-label="Mostrar letra completa de la canción">
+                                        Letra completa
+                                    </button>
+                                </h2>
+                                <div id="collapseTwoLetra" 
+                                    class="accordion-collapse collapse" 
+                                    aria-labelledby="headingLetraCompleta"
+                                    role="region">
+                                    <div class="accordion-body">
+                                        <div class="lyrics" role="article" aria-label="Letra completa de En este mundo raro">
+                                            <div class="verse mb-4" role="text" aria-label="Verso 1">
+                                                <p>Si preguntas las cosas sencillas<br>
+                                                Aprendí a responder<br>
+                                                Y para aquellas preguntas prohibidas<br>
+                                                Ningún maestro encontré</p>
+                                            </div>
+                                            <div class="chorus mb-4" role="text" aria-label="Estribillo">
+                                                <p class="fw-bold">En este mundo raro<br>
+                                                Que a veces se complica<br>
+                                                Y no tengo claro<br>
+                                                Lo que significa</p>
+                                            </div>
+                                            <div class="verse mb-4" role="text" aria-label="Verso 2">
+                                                <p>Pregunté el porqué a tantas cosas<br>
+                                                Lo que escuché no me gustó<br>
+                                                La ignorancia es a veces hermosa<br>
+                                                Inocente como el amor</p>
+                                            </div>
+                                            <div class="chorus mb-4" role="text" aria-label="Estribillo">
+                                                <p class="fw-bold">Porque este mundo es raro<br>
+                                                Y nadie me lo explica<br>
+                                                No me hables de otro lugar<br>
+                                                De vivir una eternidad</p>
+                                            </div>
+                                            <div class="verse mb-4" role="text" aria-label="Verso 3">
+                                                <p>Tal vez me parezca aburrido<br>
+                                                Y yo prefiero estar contigo nada más<br>
+                                                Sigo estando flotando entre estrellas<br>
+                                                Sin saber bien lo que soy</p>
+                                            </div>
+                                            <div class="chorus mb-4" role="text" aria-label="Verso 4">
+                                                <p>¿Dónde existen las cosas más bellas?<br>
+                                                ¿Para qué sirve el rencor?</p>
+                                            </div>
+                                            <div class="chorus mb-4" role="text" aria-label="Estribillo">
+                                                <p class="fw-bold">En este mundo raro<br>
+                                                Que tanto se complica<br>
+                                                Y no tengo claro<br>
+                                                Lo que significa</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                              
+                </div>           
+
+                <!-- Animación CSS -->
+                <div class="animation-container text-center my-5">
+                    <div class="animated-gif-wrapper">
+                        <img src="./img/gif-animado.gif" 
+                            alt="Animación de Los Secretos" 
+                            class="animated-gif"
+                            aria-label="Gif animado decorativo de Los Secretos">
+                    </div>
+                </div>                     
+            </main>
+            <hr>
+            <footer class="coninf mt-4">
+                <div class="row g-4 py-4">
+                    <div class="col-12 col-md-4 text-center">
+                        <h5>&copy; 2025 Los Secretos</h5>
+                        <p><small>Todos los derechos reservados.</small></p>
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <h5>Síguenos en</h5>
+                        <div class="mt-3">
+                            <a href="#" class="text-decoration-none mx-3">
+                                <i class="fab fa-facebook fa-2x"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none mx-3">
+                                <i class="fab fa-twitter fa-2x"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none mx-3">
+                                <i class="fab fa-instagram fa-2x"></i>
+                            </a>
+                        </div>                        
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <h5>Contacto</h5>
+                        <p>info@los-secretos<br>
+                        Management: +34 91 234 56 78</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center py-3">
+                        <small>Desarrollado por <u>juachalli</u> para un proyecto de la asignatura Diseño de Interfaces Web - 2º DAW SP</small>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="col-2 bgdcha p-0">
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

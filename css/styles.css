@@ -1,0 +1,245 @@
+/* Ajustes generales */
+
+body {
+    background-color: #F4ECC5;
+    margin: 0;
+    padding: 0;
+    background: url('../img/bg.jpg') repeat #F4ECC5;
+    /*background-size: auto 100%;*/
+}
+
+.bgizda {
+    background: url('../img/bg-i.jpg') repeat-y right #F4ECC5;
+    min-height: 100vh;
+}
+
+.bgdcha {
+    background: url('../img/bg-d.jpg') repeat-y left #F4ECC5;
+    min-height: 100vh;
+}
+
+.consup {
+    color: #616161;
+}
+
+.consup img {
+    max-height: 200px;
+    width: auto;
+}
+
+.concen{
+    color: #616161;
+}
+
+.coninf {
+    color: #616161;
+}
+
+/* Ajustes de la barra de navegación */
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #616161;
+    background-color: rgba(97, 97, 97, 0.1);
+    transform: scale(1.1);
+    border-radius: 5px;
+}
+
+.fab {
+    color: #616161;
+    transition: transform 0.3s ease;
+}
+
+.fab:hover {
+    transform: scale(1.2);
+}
+
+/* Ajustes de la sección de presentación */
+/*
+.card {
+    background-color: #F4ECC5;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    background-color: rgba(97, 97, 97, 0.1);
+    border-bottom: 1px solid #616161;
+}
+
+.card-body {
+    background-color: #F4ECC5;
+}
+*/
+.card {
+    background-color: #F4ECC5;
+    border-color: #616161;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.card-title, .card-text {
+    color: #616161;
+}
+
+.lyrics {
+    padding: 2rem;
+    text-align: center;
+}
+
+.verse, .chorus {
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+
+.verse:hover, .chorus:hover {
+    background-color: rgba(97, 97, 97, 0.05);
+    transform: scale(1.02);
+}
+
+
+/* Ajustes de la seccion acordeon */
+
+.accordion-button {
+    background-color: #F4ECC5;
+    color: #616161;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #F4ECC5;
+    color: #616161;
+}
+
+
+/* Aujustes reproductor */
+
+.audio-container {
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 500px;
+}
+
+audio {
+    width: 100%;
+    height: 40px;
+    background-color: #F4ECC5;
+    border-radius: 25px;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #F4ECC5;
+}
+
+
+.audio-container {
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 500px;
+}
+
+border-2{
+    border: 2px solid #616161;
+}
+
+
+/* Ajustes Carrusel */
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.carousel-item img {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+
+/* Paralax */
+
+.parallax-section {
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax-1 {
+    background-image: url('../img/paralax/En_este_mundo_raro_caratula.jpg');
+}
+
+.parallax-2 {
+    background-image: url('../img/paralax/En_este_mundo_raro_disco.jpg');
+}
+
+.parallax-content {
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.content-section {
+    background-color: #F4ECC5;
+    color: #616161;
+    text-align: center;
+}
+
+
+
+/* Animacion css */
+
+.animation-container {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.animated-gif-wrapper {
+    animation: float 3s ease-in-out infinite;
+    transform-origin: center top;
+}
+
+.animated-gif-wrapper:hover {
+    animation: swing 1s ease-in-out infinite;
+}
+
+.animated-gif {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes swing {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@media (max-width: 768px) {
+    .animated-gif {
+        max-width: 200px;
+    }
+}
