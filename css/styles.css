@@ -60,22 +60,6 @@ body {
 }
 
 /* Ajustes de la sección de presentación */
-/*
-.card {
-    background-color: #F4ECC5;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.card-header {
-    background-color: rgba(97, 97, 97, 0.1);
-    border-bottom: 1px solid #616161;
-}
-
-.card-body {
-    background-color: #F4ECC5;
-}
-*/
 .card {
     background-color: #F4ECC5;
     border-color: #616161;
@@ -179,11 +163,11 @@ border-2{
 }
 
 .parallax-1 {
-    background-image: url('../img/paralax/En_este_mundo_raro_caratula.jpg');
+    background-image: url('../img/paralax/en-este-mundo-raro-caratula.jpg');
 }
 
 .parallax-2 {
-    background-image: url('../img/paralax/En_este_mundo_raro_disco.jpg');
+    background-image: url('../img/paralax/en-este-mundo-raro-disco.jpg');
 }
 
 .parallax-content {

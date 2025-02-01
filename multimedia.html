@@ -14,32 +14,34 @@
         <div class="col-2 bgizda p-0">
         </div>
         <div class="col-8 p-0">
-            <header class="consup w-100">
+            <header class="consup w-100" role="banner">
                 <!-- Imágenes cabecera -->
                 <div class="row align-items-center">
                     <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center mb-3 mb-md-0">
-                        <img src="./img/los-secretos.png" alt="Los Secretos" class="img-fluid">
+                        <img src="./img/los-secretos.png" alt="Logo de Los Secretos" class="img-fluid" aria-label="Logo del grupo Los Secretos">
                     </div>
                     <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
-                        <img src="./img/en-este-mundo-raro.png" alt="En este mundo raro" class="img-fluid">
+                        <img src="./img/en-este-mundo-raro.png" alt="Portada del álbum En este mundo raro" class="img-fluid" aria-label="Portada del álbum En este mundo raro">
                     </div>                        
                 </div>
+
                 <!-- Menú Navegacion -->
-                <nav class="navbar navbar-expand-md">
+                <nav class="navbar navbar-expand-md" role="navigation" aria-label="Menú principal">
                     <div class="container-fluid">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                                aria-controls="navbarNav" aria-expanded="false" aria-label="Mostrar/Ocultar menú de navegación">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav mx-auto row text-center w-100">
-                                <li class="nav-item col-12 col-md-12 col-lg-4">
-                                    <a class="nav-link px-4" href="./index.html">Album</a>
+                            <ul class="navbar-nav mx-auto row text-center w-100" role="menubar">
+                                <li class="nav-item col-12 col-md-12 col-lg-4" role="none">
+                                    <a class="nav-link px-4" href="./index.html" role="menuitem" aria-current="page">Album</a>
                                 </li>
-                                <li class="nav-item col-12 col-md-12 col-lg-4">
-                                    <a class="nav-link px-4" href="./discografia.html">Discografia</a>
+                                <li class="nav-item col-12 col-md-12 col-lg-4" role="none">
+                                    <a class="nav-link px-4" href="./discografia.html" role="menuitem">Discografia</a>
                                 </li>
-                                <li class="nav-item col-12 col-md-12 col-lg-4">
-                                    <a class="nav-link px-4" href="./multimedia.html">Multimedia</a>
+                                <li class="nav-item col-12 col-md-12 col-lg-4" role="none">
+                                    <a class="nav-link px-4" href="./multimedia.html" role="menuitem">Multimedia</a>
                                 </li>
                             </ul>
                         </div>
@@ -47,7 +49,7 @@
                 </nav>
             </header>
             <hr>
-            <main class="concen" role="main">
+             <main class="concen" role="main">
                 <div class="container my-5">
                     <h1 class="display-4 text-center mb-5">Videos</h1>
                     <div class="row g-4">
@@ -55,14 +57,14 @@
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="card h-100">
                                 <div class="ratio ratio-16x9">
-                                    <iframe src="https://www.youtube.com/embed/OQkVY-X80_g" 
-                                            title="Los Secretos - En este mundo raro" 
-                                            allowfullscreen>
-                                    </iframe>
+                                    <video controls>
+                                        <source src="./img/videos/en-este-mundo-raro.mp4" type="video/mp4">
+                                        Tu navegador no soporta el elemento de video.
+                                    </video>
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">En este mundo raro</h5>
-                                    <p class="card-text">Videoclip Oficial - 2023</p>
+                                    <p class="card-text">Videoclip Oficial - 2011</p>
                                 </div>
                             </div>
                         </div>
@@ -71,13 +73,13 @@
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="card h-100">
                                 <div class="ratio ratio-16x9">
-                                    <iframe src="https://www.youtube.com/embed/dNJ2E1Lp8l0" 
-                                            title="Los Secretos - Pero A Tu Lado" 
-                                            allowfullscreen>
-                                    </iframe>
+                                    <video controls>
+                                        <source src="./img/videos/pero-a-tu-lado.mp4" type="video/mp4">
+                                        Tu navegador no soporta el elemento de video.
+                                    </video>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title">Pero A Tu Lado</h5>
+                                    <h5 class="card-title">Pero a tu lado</h5>
                                     <p class="card-text">Videoclip Oficial - 1995</p>
                                 </div>
                             </div>
@@ -87,14 +89,14 @@
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="card h-100">
                                 <div class="ratio ratio-16x9">
-                                    <iframe src="https://www.youtube.com/embed/4U9v6zACzpA" 
-                                            title="Los Secretos - Déjame" 
-                                            allowfullscreen>
-                                    </iframe>
+                                    <video controls>
+                                        <source src="./img/videos/ojos-de-gata.mp4" type="video/mp4">
+                                        Tu navegador no soporta el elemento de video.
+                                    </video>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title">Déjame</h5>
-                                    <p class="card-text">Videoclip Oficial - 1980</p>
+                                    <h5 class="card-title">Ojos de gata</h5>
+                                    <p class="card-text">Videoclip Oficial - 1991</p>
                                 </div>
                             </div>
                         </div>
@@ -125,12 +127,13 @@
                     <div class="col-12 col-md-4 text-center">
                         <h5>Contacto</h5>
                         <p>info@los-secretos<br>
-                        Management: +34 91 234 56 78</p>
+                        Management: +34 91 000 00 00</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12 text-center py-3">
-                        <small>Desarrollado por <u>juachalli</u> para un proyecto de la asignatura Diseño de Interfaces Web - 2º DAW SP</small>
+                        <small>Desarrollado por <a href="https://github.com/juachalli" target="_blank" class="text-decoration-none">
+                            <u>juachalli</u> <i class="fab fa-github"></i></a> para un proyecto de la asignatura Diseño de Interfaces Web - 2º DAW SP</small>
                     </div>
                 </div>
             </footer>
